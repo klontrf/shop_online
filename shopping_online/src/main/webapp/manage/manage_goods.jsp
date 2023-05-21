@@ -231,7 +231,7 @@
 
 
 <header>
-  <h1>后台管理<span style="float: right; font-size: 15px;">欢迎您~&nbsp;&nbsp;&nbsp;${admin_online.getNickName()}</span></h1>
+  <h1>后台管理<span style="float: right; font-size: 15px;">欢迎您~&nbsp;&nbsp;&nbsp;${admin_online.getNickName()}&nbsp;&nbsp;&nbsp;<a href="admin_exit" style="color: cyan">退出登录</a> </span></h1>
 
 </header>
 <nav>

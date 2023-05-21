@@ -148,7 +148,7 @@
 <body>
 <header>
     <h1 style="text-align: center; padding-left: 90px; color: #ff9500;">淘乐在线商城</h1>
-    <div style="float: right; font-size: 13px; color: blue;">欢迎您~&nbsp;&nbsp;&nbsp;${user_online.getNickName()}</div>
+    <div style="float: right; font-size: 13px; color: blue;">欢迎您~&nbsp;&nbsp;&nbsp;${user_online.getNickName()}&nbsp;&nbsp;&nbsp;<a href="user_exit">退出登录</a></div>
 </header>
 <nav>
     <ul>
