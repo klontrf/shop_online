@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--namespace为接口全限定名-->
+<mapper namespace="mapper.UserMapper">
+    <resultMap id="userRM" type="user">
+        <result column="name" property="nickName"/>
+    </resultMap>
+
+    <insert id="insertUser" parameterType="User" >
+        insert into users (account, password, mail, address, tel, name)
+        VALUES (#{account}, #{password}, #{mail}, #{address}, #{tel}, #{nickName});
+    </insert>
+    <update id="updateByAccount" parameterType="user">
+        UPDATE users
+        SET password = #{password},
+        mail     = #{mail},
+        address  = #{address},
+        tel      = #{tel},
+        name     = #{nickName}
+        WHERE account = #{account} ;
+    </update>
+    <delete id="delByAccount">
+        DELETE
+        FROM users
+        WHERE account = #{account};
+    </delete>
+
+    <select id="selectAllUsers"  resultMap="userRM">
+        select * from users where permissions=0;
+    </select>
+    <select id="selectByAccount" resultMap="userRM" >
+        select * from users where account= #{account} and permissions= #{permissions};
+    </select>
+</mapper>
