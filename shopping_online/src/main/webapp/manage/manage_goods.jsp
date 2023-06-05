@@ -204,7 +204,7 @@
         <input type="hidden" id="sales" name="sales" value="" readonly required>
 
         <label for="price">价格（元）:</label>
-        <input type="number" id="price" name="price" value="" required>
+        <input type="number" step="0.01" id="price" name="price" value="" required>
 
         <label for="stock">库存件数:</label>
         <input type="number" id="stock" name="stock" value="" required>
@@ -257,16 +257,7 @@
         <th>操作</th>
       </tr>
 
-<%--      <tr>--%>
-<%--        <td>1</td>--%>
-<%--        <td>Redmi Note 11</td>--%>
-<%--        <td>9991</td>--%>
-<%--        <td>Redmi Note 11 5G 天玑810 33W Pro快充 5000mAh大电池 6GB +128GB 神秘黑境 智能手机 小米 红米</td>--%>
-<%--        <td>2000</td>--%>
-<%--        <td>0</td>--%>
-<%--        <td>启用</td>--%>
-<%--        <td><button class="b1" name="edit">编辑</button></td>--%>
-<%--      </tr>--%>
+
 
       <c:forEach items="${goods}" var="good">
         <tr>
