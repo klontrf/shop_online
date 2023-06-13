@@ -4,55 +4,5 @@
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <!--namespace为接口全限定名-->
 <mapper namespace="mapper.OrderMapper">
-<!--<resultMap id="orderMap" type="order">-->
-<!--    <result column="user_account" property="userAccount"/>-->
-<!--    <result column="good_id" property="id"/>-->
-<!--</resultMap>-->
 
-<!--    <insert id="insertCart" parameterType="order">-->
-<!--        INSERT INTO shopping_cart (user_account, count, good_id)-->
-<!--        VALUES (#{userAccount}, 1, #{id});-->
-<!--    </insert>-->
-<!--    <insert id="insertIntoHistory" parameterType="order">-->
-<!--        INSERT INTO purchase_history (user_account, good_id, count)-->
-<!--        VALUES (#{userAccount}, #{id}, #{count});-->
-<!--    </insert>-->
-<!--    <update id="updateCountInCart" parameterType="order">-->
-<!--        UPDATE shopping_cart-->
-<!--        SET count = #{count}-->
-<!--        WHERE user_account = #{userAccount} AND good_id = #{id};-->
-<!--    </update>-->
-<!--    <update id="updateCountInHistory" parameterType="order">-->
-<!--        UPDATE purchase_history-->
-<!--        SET count = #{count}-->
-<!--        WHERE user_account = #{userAccount} AND good_id = #{id};-->
-<!--    </update>-->
-<!--    <update id="updateGood">-->
-<!--        UPDATE goods-->
-<!--        SET inventory = #{inventory},-->
-<!--        sales     = #{sales}-->
-<!--        WHERE id = #{id};-->
-<!--    </update>-->
-<!--    <delete id="deleteAllCart">-->
-<!--        DELETE-->
-<!--        FROM shopping_cart-->
-<!--        WHERE user_account = #{account};-->
-<!--    </delete>-->
-<!--    <delete id="deleteOneCart">-->
-<!--        DELETE-->
-<!--        FROM shopping_cart-->
-<!--        WHERE user_account = #{account} AND good_id = #{good_id};-->
-<!--    </delete>-->
-<!--    <select id="selectByIdFromCart" resultMap="orderMap">-->
-<!--        select * from shopping_cart where user_account=#{account} and good_id=#{id};-->
-<!--    </select>-->
-<!--    <select id="selectCartByAccount" resultType="pojo.ShowOrder">-->
-<!--        select id,path,name,price,count from goods,shopping_Cart where goods.id=shopping_Cart.good_id and user_account=#{account};-->
-<!--    </select>-->
-<!--    <select id="selectByIdFromHistory" resultMap="orderMap">-->
-<!--        select * from purchase_history where user_account=#{account} and good_id=#{id};-->
-<!--    </select>-->
-<!--    <select id="selectHistoryByAccount" resultType="pojo.ShowOrder">-->
-<!--        select id,path,name,price,count from goods,purchase_history where goods.id=purchase_history.good_id and user_account=#{account};-->
-<!--    </select>-->
 </mapper>

@@ -4,40 +4,4 @@
         "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="mapper.GoodMapper">
-<!--    <resultMap id="foodMap" type="good">-->
-<!--        <result column="id" property="id"/>-->
-<!--        <result column="name" property="name"/>-->
-<!--        <result column="path" property="path"/>-->
-<!--        <result property="introduce" column="introduce"/>-->
-<!--        <result column="price" property="price"/>-->
-
-<!--    </resultMap>-->
-<!--    <update id="updateGood" parameterType="good">-->
-<!--        UPDATE goods-->
-<!--        SET name      = #{name},-->
-<!--        price     = #{price},-->
-<!--        introduce = #{introduce},-->
-<!--        inventory = #{inventory},-->
-<!--        state     = #{state}-->
-<!--        WHERE id = #{id};-->
-<!--    </update>-->
-<!--    <select id="selectAllGoods" resultType="good">-->
-<!--        select * from goods;-->
-<!--    </select>-->
-<!--    <select id="selectGoods" resultType="pojo.Good">-->
-<!--        select * from goods where state='启用';-->
-<!--    </select>-->
-<!--    <select id="selectFoods" resultType="good">-->
-<!--        select id, name, path, price, introduce from foods_sort,goods where foods_sort.good_id=goods.id and state='启用';-->
-<!--    </select>-->
-<!--    <select id="selectElectronics" resultType="pojo.Good">-->
-<!--        select id, name, path, price, introduce from electronics_sort,goods where electronics_sort.good_id=goods.id and state='启用';-->
-<!--    </select>-->
-<!--    <select id="selectClothes" resultType="pojo.Good">-->
-<!--        select id, name, path, price, introduce from sport_sort,goods where sport_sort.good_id=goods.id and state='启用';-->
-<!--    </select>-->
-<!--    <select id="selectOneById" resultType="pojo.Good">-->
-<!--        select * from goods where id=#{id};-->
-<!--    </select>-->
-
 </mapper>

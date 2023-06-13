@@ -7,7 +7,7 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import java.io.IOException;
 import java.io.InputStream;
 
-public class FactoryOfSqlSession {
+public class    FactoryOfSqlSession {
     static SqlSessionFactory ssFactory=null;
     static {
         String resource = "mybatis-config.xml";
