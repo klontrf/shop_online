@@ -15,22 +15,7 @@
       <version>6.0.0</version>
       <scope>provided</scope>
     </dependency>
-
-
-
-    <!--    引入jstl库-->
-<!--    <dependency>-->
-<!--      <groupId>jstl</groupId>-->
-<!--      <artifactId>jstl</artifactId>-->
-<!--      <version>1.2</version>-->
-<!--    </dependency>-->
-    <!-- https://mvnrepository.com/artifact/jakarta.servlet.jsp.jstl/jakarta.servlet.jsp.jstl-api -->
-<!--    <dependency>-->
-<!--      <groupId>jakarta.servlet.jsp.jstl</groupId>-->
-<!--      <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>-->
-<!--      <version>3.0.0</version>-->
-<!--    </dependency>-->
-    <!-- https://mvnrepository.com/artifact/org.glassfish.web/jakarta.servlet.jsp.jstl -->
+    
     <dependency>
       <groupId>org.glassfish.web</groupId>
       <artifactId>jakarta.servlet.jsp.jstl</artifactId>
@@ -56,12 +41,5 @@
   </dependencies>
   <build>
     <finalName>shopping_online</finalName>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.tomcat.maven</groupId>
-        <artifactId>tomcat7-maven-plugin</artifactId>
-        <version>2.2</version>
-      </plugin>
-    </plugins>
   </build>
 </project>
