@@ -30,7 +30,7 @@ create table goods
         primary key (id)
 );
 
-create table shopping_Cart
+create table shopping_cart
 (
     user_account varchar(16) not null comment '用户账号',
     count        int         null comment '加入数量',
